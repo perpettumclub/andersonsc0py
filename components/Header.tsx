@@ -8,14 +8,14 @@ export const Header: React.FC = () => {
     <nav className="fixed w-full z-50 top-0 left-0 border-b border-white/5 bg-[#050410]/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+          <a href="#" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-wope-primary to-wope-accent flex items-center justify-center">
-                <PenTool className="text-white w-5 h-5" />
+              <PenTool className="text-white w-5 h-5" />
             </div>
             <span className="font-bold text-xl tracking-tight text-white">Anderson Santos</span>
-          </div>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
             <a href="#portfolio" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">Portfólio</a>
             <a href="#contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">Contato</a>
             <div className="pt-4">
-                 <a href="https://wa.me/5511982844434" target="_blank" rel="noreferrer" className="block w-full text-center px-3 py-2 text-base font-medium text-white bg-wope-primary/20 hover:bg-wope-primary/30 rounded-md">WhatsApp</a>
+              <a href="https://wa.me/5511982844434" target="_blank" rel="noreferrer" className="block w-full text-center px-3 py-2 text-base font-medium text-white bg-wope-primary/20 hover:bg-wope-primary/30 rounded-md">WhatsApp</a>
             </div>
           </div>
         </div>
